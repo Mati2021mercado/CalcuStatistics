@@ -14,4 +14,4 @@ from n import n
 
 media = la_suma_pm_por_f / n
 
-print(f'la media es: {media}')
+# print(f'la media es: {media}')

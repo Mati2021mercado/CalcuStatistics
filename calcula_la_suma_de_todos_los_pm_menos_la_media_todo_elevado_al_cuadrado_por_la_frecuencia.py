@@ -16,6 +16,4 @@ for pm,f in zip(PM_lista,F_lista):
 
 la_suma_pm_media_f = sum(pm_media_f)
 
-print(pm_media_f)
 
-print(la_suma_pm_media_f)

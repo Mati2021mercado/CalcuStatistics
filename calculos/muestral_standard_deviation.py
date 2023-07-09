@@ -10,8 +10,8 @@ from n import n
 # print(la_suma_pm_media_f)
 # print(n)
 
-desvio_al_cuadrado = la_suma_pm_media_f / n
+desvio_muestral_al_cuadrado = la_suma_pm_media_f / n - 1 
 
-desvio = sqrt(desvio_al_cuadrado)
+desvio_muestral = sqrt(desvio_muestral_al_cuadrado)
 
-print(f'el desvio estandar es de: {desvio}')
+print(f'el desvio estandar es de: {desvio_muestral}')
