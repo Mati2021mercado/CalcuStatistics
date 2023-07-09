@@ -14,3 +14,4 @@ for pm,f in zip(PM_lista,F_lista):
     pm_por_f.append(calculo)
 
 la_suma_pm_por_f = sum(pm_por_f) 
+

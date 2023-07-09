@@ -13,4 +13,4 @@ def Add_dict(cantidad):
             "frecuencia" : f
             }
         lista.append(diccionario)
-Add_dict(2)
+Add_dict(5)
