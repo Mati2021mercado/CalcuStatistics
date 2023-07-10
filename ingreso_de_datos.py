@@ -1,5 +1,7 @@
 #PARTO CON DATOS AGRUPADOS (VARIACION CONTINUA)
 
+tamaño_de_la_muestra = int(input("sample size: "))
+
 lista = ([])
 
 def Add_dict(cantidad):
@@ -13,4 +15,4 @@ def Add_dict(cantidad):
             "frecuencia" : f
             }
         lista.append(diccionario)
-Add_dict(5)
+Add_dict(tamaño_de_la_muestra)
