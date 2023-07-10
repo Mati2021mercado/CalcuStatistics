@@ -3,7 +3,7 @@
 tamaño_de_la_muestra = int(input("sample size: "))
 
 lista = ([])
-
+intervalos = ([])
 def Add_dict(cantidad):
     for i in range(cantidad):
         num1=int(input("num1: "))
@@ -15,4 +15,7 @@ def Add_dict(cantidad):
             "frecuencia" : f
             }
         lista.append(diccionario)
+        intervalo = f'{num1}-{num2}'
+        intervalos.append(intervalo)
+
 Add_dict(tamaño_de_la_muestra)

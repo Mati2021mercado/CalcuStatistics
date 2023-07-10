@@ -7,4 +7,5 @@ from n import n
 
 desvio_al_cuadrado = la_suma_pm_media_f / n - 1 
 
-desvio_muestral = sqrt(desvio_al_cuadrado)
+desvio = sqrt(desvio_al_cuadrado)
+desvio = round(desvio, 3)

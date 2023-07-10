@@ -11,6 +11,7 @@ if question == "yes":
     import cv_poblacion
     from visualitation import visualitation_data
     from ingreso_de_datos import tamaño_de_la_muestra
+    from data_visualitation import cuadro
     
     visualitation_data(
         cv = cv_poblacion.cv,
@@ -18,11 +19,13 @@ if question == "yes":
         media = cv_poblacion.media,
         tamaño = tamaño_de_la_muestra
         )
+    cuadro()
     
 elif question == "not":
     import cv_muestra
     from visualitation import visualitation_data
     from ingreso_de_datos import tamaño_de_la_muestra
+    from data_visualitation import cuadro
     
     visualitation_data(
         cv = cv_muestra.cv,
@@ -30,17 +33,7 @@ elif question == "not":
         media = cv_muestra.media,
         tamaño = tamaño_de_la_muestra
         )
+    cuadro()
     
 else:
     print("you entered the data wrong")
-
-# cv = 0
-
-# if question == "si":
-    
-#     cv = 1
-    
-# elif question == "no":
-#     cv = 2
-    
-# print(cv)
