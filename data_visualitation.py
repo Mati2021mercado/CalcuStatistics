@@ -11,18 +11,27 @@ import csv
 # RECORRER LAS 3 LISTAS A LA VEZ PARA MOSTRAR EL CUADRO
 def cuadro():
     data_cuadro = ([])
-    titles = ['intervalo', 'punto medio', 'frecuencia', 'frecuencia acumulada']
+    data_for_graphic = ([])
+    titles = ['intervalo', 'punto_medio', 'frecuencia', 'frecuencia_acumulada']
+    titles_graphic = ["intervalos","frecuencias"]
     for intervalo,pm,f,faa in zip(intervalos,PM_lista,F_lista,FAA_lista):
         pm = int(pm)
         
         datos = [intervalo, pm,f,faa]
         data_cuadro.append(datos)
         
-    with open("calculos\\data.csv", 'a', newline='') as archivo_csv:
+        data_f_g = [intervalo,f]
+        data_for_graphic.append(data_f_g)
+        
+    with open("calculos\\data.csv", 'w', newline='') as archivo_csv:
         escritor_csv = csv.writer(archivo_csv)
-            # escritor_csv.write
         escritor_csv.writerows([titles])
         escritor_csv.writerows(data_cuadro)
+        
+    with open("calculos\\data_for_graphic.csv", 'w', newline='') as arch_csv:
+        escritor_csv = csv.writer(arch_csv)
+        escritor_csv.writerows([titles_graphic])
+        escritor_csv.writerows(data_for_graphic)
 
 
 
