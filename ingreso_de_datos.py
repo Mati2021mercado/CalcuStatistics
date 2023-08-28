@@ -1,21 +1,25 @@
 #PARTO CON DATOS AGRUPADOS (VARIACION CONTINUA)
 
-tamaño_de_la_muestra = int(input("sample size: "))
+tamaño_de_la_muestra = int(input("number of intervals: "))
 
 lista = ([])
-intervalos = ([])
+limite_inferior = ([])
+limite_superior = ([])
+
 def Add_dict(cantidad):
     for i in range(cantidad):
-        num1=int(input("num1: "))
-        num2=int(input("num2: "))
-        f=int(input("frecuencia: "))
+        LI=float(input("lower limit: "))
+        LS=float(input("upper limit: "))
+        f=int(input("frecuency: "))
         
         diccionario = {
-            num1: num2,
-            "frecuencia" : f
+            LI: LS,
+            "frecuency" : f
             }
         lista.append(diccionario)
-        intervalo = f'{num1}-{num2}'
-        intervalos.append(intervalo)
+        # intervalo = f'{LI}-{LS}'
+        # intervalos.append(intervalo)
+        limite_inferior.append(LI)
+        limite_superior.append(LS)
 
 Add_dict(tamaño_de_la_muestra)

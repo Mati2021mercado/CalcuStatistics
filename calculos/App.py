@@ -12,7 +12,7 @@ if question == "yes":
     from visualitation import visualitation_data
     from ingreso_de_datos import tamaño_de_la_muestra
     from data_visualitation import cuadro
-    from grafico import Graphic
+    # from grafico import Graphic
     
     visualitation_data(
         cv = cv_poblacion.cv,
@@ -21,7 +21,7 @@ if question == "yes":
         tamaño = tamaño_de_la_muestra
         )
     cuadro()
-    Graphic()
+    # Graphic()
     
     
 elif question == "not":

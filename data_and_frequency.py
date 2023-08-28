@@ -16,14 +16,16 @@ for datos_agrupados in lista :
     for datos in datos_agrupados.items():
         key = datos[0]
         value = datos[1]
-        if key == "frecuencia":
+        if key == "frecuency":
             f = value
             F_lista.append(f)
         else:
-            a = key
-            b = value
+            a = float(key)
+            b = float(value)
 
             #SACO PUNTO MEDIO (PM)
             pm = (a + b) / 2
+            # print(float(pm))
             PM_lista.append(pm)
+            
             # print(f'X: {a} - {b} PM: {int(pm)} ')

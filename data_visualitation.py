@@ -1,7 +1,8 @@
 from data_and_frequency import F_lista, PM_lista
 from frequency_accumulated import FAA_lista
-from ingreso_de_datos import intervalos
+from ingreso_de_datos import limite_inferior, limite_superior
 # import pandas as pd
+
 import csv
 
     ##############################################
@@ -12,15 +13,14 @@ import csv
 def cuadro():
     data_cuadro = ([])
     data_for_graphic = ([])
-    titles = ['intervalo', 'punto_medio', 'frecuencia', 'frecuencia_acumulada']
-    titles_graphic = ["intervalos","frecuencias"]
-    for intervalo,pm,f,faa in zip(intervalos,PM_lista,F_lista,FAA_lista):
-        pm = int(pm)
+    titles = ['limite_inferior', 'limite_superior', 'punto_medio', 'frecuencia', 'frecuencia_acumulada']
+    titles_graphic = ["limite_inferior","limite_superior","frecuencias"]
+    for LI,LS,pm,f,faa in zip(limite_inferior, limite_superior,PM_lista,F_lista,FAA_lista):
         
-        datos = [intervalo, pm,f,faa]
+        datos = [LI,LS, pm,f,faa]
         data_cuadro.append(datos)
         
-        data_f_g = [intervalo,f]
+        data_f_g = [LI,LS,f]
         data_for_graphic.append(data_f_g)
         
     with open("calculos\\data.csv", 'w', newline='') as archivo_csv:
