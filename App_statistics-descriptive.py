@@ -1,6 +1,6 @@
 import sys
 # print(sys.path)
-sys.path.append('C:\\Users\\Matias\\Desktop\\Lenguajes\\Python\\CalcuStatistics')
+sys.path.append('C:\\Users\\Matias\\Desktop\\Lenguajes\\Python\\CalcuStatistics\\calculos')
 
 
 question = input("Is the data set population? (yes or not): ")
@@ -8,8 +8,9 @@ question = question.lower()
 
 
 if question == "yes":
-    import cv_poblacion
-    from visualitation import visualitation_data
+    import calculos.cv_poblacion as cv_poblacion
+    # from visualitation import visualitation_data
+    from calculos.visualitation import visualitation_data
     from ingreso_de_datos import tamaño_de_la_muestra
     from data_visualitation import cuadro
     # from grafico import Graphic
@@ -25,11 +26,11 @@ if question == "yes":
     
     
 elif question == "not":
-    import cv_muestra
-    from visualitation import visualitation_data
+    import calculos.cv_muestra as cv_muestra
+    from calculos.visualitation import visualitation_data
     from ingreso_de_datos import tamaño_de_la_muestra
     from data_visualitation import cuadro
-    from grafico import Graphic
+    # from grafico import Graphic
     
     visualitation_data(
         cv = cv_muestra.cv,
@@ -38,7 +39,7 @@ elif question == "not":
         tamaño = tamaño_de_la_muestra
         )
     cuadro()
-    Graphic()
+    # Graphic()
     
 else:
     print("you entered the data wrong")
