@@ -7,7 +7,7 @@ def Result(k):
     #################
         
     # Abre el archivo CSV en modo de lectura
-    with open('calculos/data.csv', 'r') as archivo_csv:
+    with open('archivos/data.csv', 'r') as archivo_csv:
         # Crea un objeto de lectura CSV
         lector_csv = csv.reader(archivo_csv)
         

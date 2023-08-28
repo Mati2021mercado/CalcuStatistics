@@ -1,5 +1,5 @@
 from calculos.data_and_frequency import PM_lista, F_lista
-from calculos.media import media
+from calculos.mean import media
 
 
     ###############################################################################################

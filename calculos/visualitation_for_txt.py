@@ -1,5 +1,4 @@
 
-import csv
 def visualitation_data(cv,desvio,media,tamaño):
     data = f'''
       Size          : {tamaño}
@@ -7,7 +6,7 @@ def visualitation_data(cv,desvio,media,tamaño):
       CV            : {cv}
       Mean/average  : {media}
       '''
-    with open("calculos\\data.txt",'w',encoding="UTF-8",) as archivo:
+    with open("archivos\\data.txt",'w',encoding="UTF-8",) as archivo:
         archivo.write(f"{data}")
     
     

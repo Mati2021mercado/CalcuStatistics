@@ -1,0 +1,6 @@
+
+      Size          : 5
+      Deviation     : 5.758
+      CV            : 0.284
+      Mean/average  : 20.3
+      

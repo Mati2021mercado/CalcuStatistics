@@ -1,0 +1,6 @@
+limite_inferior,limite_superior,punto_medio,frecuencia,frecuencia_acumulada
+10.0,15.0,12.5,8,8
+15.0,20.0,17.5,21,29
+20.0,25.0,22.5,10,39
+25.0,30.0,27.5,7,46
+30.0,35.0,32.5,4,50

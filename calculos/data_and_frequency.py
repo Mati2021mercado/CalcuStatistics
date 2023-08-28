@@ -1,4 +1,4 @@
-from calculos.ingreso_de_datos import lista
+from calculos.input import lista
 
     ###########################
     ######### PARTE 2 #########

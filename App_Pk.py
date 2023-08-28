@@ -1,6 +1,6 @@
 
 
-from calculos.calculo_Pk import Result
+from calculos.calculation_Pk import Result
 
 k = float(input("valor de K (percentil):  "))
 
