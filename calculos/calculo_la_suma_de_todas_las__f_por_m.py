@@ -1,4 +1,4 @@
-from data_and_frequency import PM_lista, F_lista
+from calculos.data_and_frequency import PM_lista, F_lista
 
 
     ###########################################################

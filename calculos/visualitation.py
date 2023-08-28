@@ -1,9 +1,5 @@
-import sys
-# print(sys.path)
-sys.path.append('C:\\Users\\Matias\\Desktop\\Lenguajes\\Python\\CalcuStatistics')
 
 import csv
-
 def visualitation_data(cv,desvio,media,tamaño):
     data = f'''
       Size          : {tamaño}

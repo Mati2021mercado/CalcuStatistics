@@ -1,6 +1,6 @@
-from data_and_frequency import F_lista, PM_lista
-from frequency_accumulated import FAA_lista
-from ingreso_de_datos import limite_inferior, limite_superior
+from calculos.data_and_frequency import F_lista, PM_lista
+from calculos.frequency_accumulated import FAA_lista
+from calculos.ingreso_de_datos import limite_inferior, limite_superior
 # import pandas as pd
 
 import csv

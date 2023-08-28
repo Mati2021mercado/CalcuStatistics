@@ -1,4 +1,4 @@
-from data_and_frequency import F_lista
+from calculos.data_and_frequency import F_lista
 
 #Hago la lista de Frecuencias Acumuladas(FAA)
 
